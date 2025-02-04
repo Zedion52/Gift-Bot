@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  bot:
+    build: .
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - /data:/app/data
+    environment:
+      - API_TOKEN=5000473503:AAEgrgzmUqXbs3JIH0rRWl0oiv3eq7gCUsU/test
+      - PAYMENT_PROVIDER_TOKEN=TEST:5000473503
+      - OWNER_ID=2200372671
